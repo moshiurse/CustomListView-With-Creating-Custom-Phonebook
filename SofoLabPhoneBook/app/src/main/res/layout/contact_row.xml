@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/contactImage"
+        android:src="@drawable/ic_account_box_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/contactName"
+        android:layout_centerHorizontal="true"
+        android:text="Nam Nai"
+        android:layout_toRightOf="@+id/contactImage"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactNumber"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/contactImage"
+        android:layout_below="@id/contactName"
+        android:text="01962476055"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactEmail"
+        android:layout_below="@id/contactNumber"
+        android:text="namnai@gmail.com"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/contactImage"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+</RelativeLayout>
